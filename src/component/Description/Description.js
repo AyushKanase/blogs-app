@@ -1,4 +1,5 @@
 import './Description.css';
+
 function Description() {
     return (
         <div>
@@ -8,6 +9,7 @@ function Description() {
                     <div className='DescriptionHeadSecLeftside'>Blogs</div>
                     <div className='DescriptionHeadRightsideSec'>
                         <span className='DescriptionName'>Ishwari Kanase</span>
+                        
                         <span className='DescriptionLogout'>Logout</span>
                     </div>
                 </div>

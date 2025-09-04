@@ -11,6 +11,7 @@
 .DescriptionHeadSecLeftside {
     font-size: 22px;
     font-weight: bold;
+
     margin-left: 25px;
 
 }
@@ -71,9 +72,9 @@
     border-radius: 5px;
     border-color: 1px solid;
     
-     width: 300px;     
-      height: 120px;    
-      resize: none;     
+     width:99%;     /* fixed width */
+      height: 140px;    /* fixed height */
+      resize: none;     /* 🚫 disables manual resize */
       overflow: auto; 
     
 }

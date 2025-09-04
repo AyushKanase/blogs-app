@@ -1,0 +1,102 @@
+.headpartation {
+    background-color: navy;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.HeadSecLeftside {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+.Name {
+    font-weight: 450;
+    margin-right: 10px;
+
+
+}
+
+.logout {
+    font-weight: 450;
+}
+
+
+
+.MostOutersec {
+    padding-left: 180px;
+    padding-right: 180px;
+}
+
+.midsec {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.sentence {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.textsec {
+
+    padding-bottom: 20px;
+    margin-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    background-color: rgb(238, 238, 238);
+    color: black;
+
+}
+
+.helloworldText {
+    background-color: rgb(238, 238, 238);
+    color: black;
+    margin-left: 145;
+    padding: 10px;
+    margin-right: 145;
+    font-size: 28;
+    border-radius: 5px;
+}
+
+.sepratingLineBetweentextandblogtext {
+    border-color: black;
+    margin-right: 145
+}
+
+.createdbyName {
+    font-size: 12;
+    margin-top: 8
+}
+
+.LoremIpsumSpeech {
+    font-size: 13px;
+    margin-bottom: 30;
+    font-weight: 450;
+}
+
+.BlogTitle {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.createPostButton {
+    background-color: navy;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 10px;
+    
+}
+.HeadRightsideSec{
+    margin-right: 28px;
+}

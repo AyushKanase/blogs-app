@@ -1,0 +1,48 @@
+.headerSection{
+    background-color: navy;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px; 
+}
+.HeaderSectionLeftside{
+    font-weight: bolder;
+    
+}
+
+.HeaderRightsideSection{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3%;
+    
+}
+.HeaderRightsideLogin{
+    margin-right: 25%;
+}
+.HeaderRightsideRegister{
+    margin-right: 20%;
+}
+.loginButton{
+background-color:navy;color:white;padding:10px;border:none;border-radius:6px;font-weight:bold ;margin-left: 60px;
+}
+.registerButton{
+background-color:navy;color:white;padding:10px;border:none;border-radius:6px;;font-weight:bold;
+}
+.bodySection{background-color:silver;color:black;padding:12px;margin:0;border-radius:3px;width:55%;margin-top:20px;
+ 		 margin-bottom: 100px;
+        
+  		 margin-left: 260px;
+        height: 1%;}
+.blogTitle{
+    margin-bottom: 3%;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.Buttons{
+    margin-left: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.SepratingLine{
+    border-color: black;
+}

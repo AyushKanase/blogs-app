@@ -1,0 +1,88 @@
+.headPart {
+    background-color: navy;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px
+}
+
+.HeadSectionLeftside {
+    font-weight: bolder;
+}
+
+.HeadRightsideSection {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3%;
+}
+
+.HeadRightsideLogin {
+    margin-right: 25%;
+}
+
+.HeadRightsideRegister {
+    margin-right: 20%;
+}
+
+/* heading part end here  */
+.LoginSection {
+    background-color: rgb(238, 238, 238);
+    color: black;
+    padding: 15px;
+    margin: 0;
+    border-radius: 3px;
+    width: 20%;
+    margin-top: 39px;
+    margin-bottom: 130px;
+    margin-right: 120px;
+    margin-left: 450px
+}
+
+.BlogHeadingINLoginSection {
+    font-weight: bolder;
+    font-size: 25px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.textUndertheBlogtext {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.SepratingLineBetweenInputFieldandLoginsection {
+    border-color: black;
+}
+
+.textundertheSepratingline {
+    background-color: rgb(238, 238, 238);
+    color: navy;
+    margin-left: 80px;
+    font-weight: bolder;
+    font-size: 21px;
+
+}
+
+.EmailIdInutfield {
+    width: 100%;
+    padding: 5px;
+    border: none;
+}
+
+.EnterPassword {
+    width: 100%;
+    padding: 5px;
+    border: none;
+}
+
+.LoginButton {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 70px
+}

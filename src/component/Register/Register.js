@@ -1,14 +1,29 @@
+import { useNavigate } from 'react-router-dom';
 import './Register.css';
 function Register() {
+    const navigate=useNavigate();
+    const navigateToDashboard=()=>{
+    navigate("/")
+}
+const navigateToRegister=()=>{
+    navigate("/register")
+}
+const navigateToLogin=()=>{
+    navigate("/login")
+}
+const navigateToHelloWorldBlog=()=>{
+    navigate("/helloworldblog")
+}
+
     return (
         <div>
             <div>
                 {/* Headersection Start */}
                 <div className='headingPart'>
-                    <div className='HeadingSectionLeftside'>Blogs</div>
+                    <div className='HeadingSectionLeftside'onClick={navigateToDashboard}>Blogs</div>
                     <div className='HeadingRightsideSection'>
-                        <div className='HeadingRightsideLogin'>Login</div>
-                        <div className='HeadingRightsideRegister'>Register</div>
+                        <div className='HeadingRightsideLogin'onClick={navigateToLogin}>Login</div>
+                        <div className='HeadingRightsideRegister'onClick={navigateToRegister}>Register</div>
                     </div>
                 </div>
                 {/* Headersection end */}
@@ -23,7 +38,7 @@ function Register() {
                     <input type="text" placeholder="test@gmail.com" className='EmailInutfield' /> <br />
                     <lable>Password</lable><br />
                     <input type="text" placeholder="Test@123"className='Passwordinputfiled' /> <br />
-                    <button className='RegisterButton'>Register</button>
+                    <button className='RegisterButton'onClick={navigateToHelloWorldBlog}>Register</button>
 
 
 

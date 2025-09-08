@@ -1,3 +1,4 @@
+
 .Descriptionheadpartation {
     background-color: navy;
     color: white;
@@ -21,18 +22,21 @@
 }
 
 .DescriptionName {
-    font-weight: 450;
+    font-weight: bold;
     margin-right: 10px;
 }
-
+.rightArrow{
+    color:white;
+    margin-right: 10px;
+}
 .DescriptionLogout {
-    font-weight: 450;
+    font-weight: bold;
 }
 
 /* head section end here  */
 
 .DescriptionBodysection {
-    background-color: white;
+    
     padding: 9px;
     border-radius: 5px;
     margin-right: 145;
@@ -96,4 +100,7 @@
     border: none;
     margin-left: 10px;
     margin-bottom: 26px;
+}
+.userIcon{
+    margin-right: 5px;
 }

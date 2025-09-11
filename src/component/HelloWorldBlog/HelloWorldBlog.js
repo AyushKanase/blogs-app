@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import './HelloWorldBlog.css';
+import { getByTitle } from '@testing-library/dom';
 function HelloWorldBlog() {
     const navigate = useNavigate();
     const navigateToDashboard = () => {
@@ -14,8 +15,42 @@ function HelloWorldBlog() {
     const navigateToDescription = () => {
         navigate("/description")
     }
+//    function handelChangeDescription(){
+//     axios.get('http://localhost:3001/blog')
+//     .then(response=>{
 
+//     })
+//    }
 
+    const blogs=[
+        {
+            Title:"Hello World",
+            CreatedBy:"ishwari.kanas@gmail.com",
+            CreatedAt:"1st Dec,2021",
+            Description:"Lorem ipsum is simply dummy text"
+        },
+         {
+            Title:"Hello World",
+            CreatedBy:"ishwari.kanas@gmail.com",
+            CreatedAt:"1st Dec,2021",
+            Description:"Lorem ipsum is simply dummy text"
+        },
+         {
+            Title:"Hello World",
+            CreatedBy:"ishwari.kanas@gmail.com",
+            CreatedAt:"1st Dec,2021",
+            Description:"Lorem ipsum is simply dummy text"
+        },
+         {
+            Title:"Hello World",
+            CreatedBy:"ishwari.kanas@gmail.com",
+            CreatedAt:"1st Dec,2021",
+            Description:"Lorem ipsum is simply dummy text"
+        },
+
+    ]
+
+    
 
     return (
         <div>
@@ -40,15 +75,13 @@ function HelloWorldBlog() {
                     </div>
                     <div className='sentence'>Publish your passion,your way...</div>
                     <hr className='sepratingLineBetweentextandblogtext'></hr>
-                    <div className='textsec'>
-                        <div className='helloworldText'><strong>Hello World</strong></div>
-                        <div className='createdbyName'><strong>Created By</strong><span > ishwari.kanase@gmail.com</span></div>
-                        <div><strong>Creadted At</strong><span>1st Dec,2021</span></div><hr />
-                        <div className='LoremIpsumSpeech'>lorem ispum is simply dummy text of theprinting and typesetting industry.lorem ispum has been the industrys standard dummy text ever since the 1500s, when an
-                            unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-                            type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-                            1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including</div><br />
+                    {blogs.map((blog)=>{
+                  return  <div className='textsec' key={blog.id}>
+                    
+                        <div className='helloworldText'>{blog.Title}</div>
+                        <div className='createdbyName'>{blog.CreatedBy}<span > </span></div>
+                        <div><strong>{blog.CreatedAt}</strong><span></span></div><hr />
+                        <div className='LoremIpsumSpeech'>{blog.Description}</div><br />
                         <button className='thumbsUp'><i class="fa fa-thumbs-up thumbsUpIcon" aria-hidden="true"></i>
                             0</button>
                         <button className='thumbsDown'><i class="fa fa-thumbs-down thumbsDownIcon" aria-hidden="true"></i>
@@ -59,6 +92,7 @@ function HelloWorldBlog() {
                         <button className='deleteButton'><i class="fa fa-trash deleteBUttonIcon" aria-hidden="true"></i>
                             Delete</button>
                     </div>
+                    })}
                 </div>
             </div>
         </div>

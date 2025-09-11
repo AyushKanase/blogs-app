@@ -1,0 +1,43 @@
+{
+  "user": [
+    {
+      "id": "e8d8",
+      "name": "ayush kanase",
+      "email": "kanaseayush4@gmail.com",
+      "password": "kanaseayush"
+    },
+    {
+      "id": "908b",
+      "name": "",
+      "email": "",
+      "password": ""
+    }
+  ],
+  "blog": [
+    {
+      "id": "3163",
+      "Title": "Blog",
+      "Description": "Hi!"
+    },
+    {
+      "id": "5157",
+      "Title": "BLOG NO.2",
+      "Description": "THURSDAY"
+    },
+    {
+      "id": "b41f",
+      "Title": "Blog No.3",
+      "Description": "Heyy!"
+    },
+    {
+      "id": "7e48",
+      "Title": "",
+      "Description": ""
+    },
+    {
+      "id": "330a",
+      "Title": "",
+      "Description": ""
+    }
+  ]
+}

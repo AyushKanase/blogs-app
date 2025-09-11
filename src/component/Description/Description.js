@@ -1,3 +1,5 @@
+import axios from "axios";
+import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import './Description.css';
 
@@ -13,6 +15,39 @@ function Description() {
     const navigateToDashboard = () => {
         navigate("/")
     }
+   const[userDescriptiondata,setuserDescriptionData]=useState({Title:"",Description:""});
+   function handelChangeDescription (){
+       console.log(userDescriptiondata)
+       navigate("/description")
+   }
+   function handelChangeDescription(){
+    axios.post('http://localhost:3001/blog',userDescriptiondata)
+    .then(response=>{
+        alert("Title updated Successfully")
+        navigate("/description ")
+    })
+    .catch(error=>{
+        console.error("Title updated Failed",error);
+    });
+}
+
+
+
+
+
+
+   function handelChangeTitle(event){
+      let user={...userDescriptiondata};
+           user["Title"]=event.target.value;
+           setuserDescriptionData(user)
+       
+       
+   }
+   function handelChangeDescriptionTextArea(event){
+       let user={...userDescriptiondata};
+       user["Description"]=event.target.value;
+       setuserDescriptionData(user)
+   }
     return (
         <div>
             <div>
@@ -32,11 +67,11 @@ function Description() {
                     <div className='DescriptionBodysection'>
 
                         <div className='Textarea'>
-                            <div><input type='text' placeholder='Title' className='DescriptionTitle' /></div>
+                            <div><input type='text' placeholder='Title' className='DescriptionTitle'onChange={handelChangeTitle} value={userDescriptiondata.Title} /></div>
                             <hr className='DescriptionSepratingLine' />
-                            <div><textarea placeholder="Description" className='DescriptionTextArea'></textarea></div><br></br>
+                            <div><textarea placeholder="Description" className='DescriptionTextArea' onChange={handelChangeDescriptionTextArea} value={userDescriptiondata.Description}></textarea></div><br></br>
                             <button className='DescriptionCancelButton'><strong>Cancel</strong></button>
-                            <button className='DescriptionSaveButton'><strong>Save</strong></button>
+                            <button className='DescriptionSaveButton' onClick={handelChangeDescription}><strong>Save</strong></button>
                         </div>
 
                     </div>
